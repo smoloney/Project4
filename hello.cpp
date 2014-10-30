@@ -1,6 +1,11 @@
+#include <string>
+#include <iostream>
 
+int main(int argc, char* argv[])
+{
 // Default is "World"
-name = ARGV.FIRST || "World"
+ std::string name; 
+name = argv[10] || "World";
 
-puts "Hello, #{ARGV.first}!"
-
+ std::cout << "Hello, " << name;
+}  
